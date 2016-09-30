@@ -5,11 +5,14 @@
 wordpress_sites:
   bucklandandrempel.com:
     site_hosts:
-      - canonical: bucklandandrempel.com
+      - canonical: staging.wemakeitaweso.me
         redirects:
-          - www.bucklandandrempel.com
+         # - www.bucklandandrempel.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@bucklandandrempel.com
+    repo: git@github.com:Annalyn/mining.git # replace with your Git repo URL
+    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    branch: master
+    admin_email: manilenya@gmail.com
     multisite:
       enabled: false
     ssl:
